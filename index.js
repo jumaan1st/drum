@@ -66,8 +66,8 @@ function makesound(me) {
 
 }
 document.addEventListener("keypress", function (event) {
-    makesound(event.key);
-    buttonAnimation(event.key);
+    makesound(event.key.toLowerCase());
+    buttonAnimation(event.key.toLowerCase());
 });
 
 function buttonAnimation(light) {
